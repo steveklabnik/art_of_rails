@@ -122,6 +122,34 @@ realtime/ ?
             <h3>Ember.js 〈( ^.^)ノ</h3>
           </section>
           <section>
+            <h3>Example:</h3>
+<pre><code data-trim>
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Author&lt;/th&gt;&lt;/tr&gt;
+  &lt;% @posts.each do |post| %&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;%= post.title %&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;%= post.author %&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;% end %&gt;
+&lt;/table&gt;
+</code></pre>
+vs.
+<pre><code data-trim>
+&lt;script type="text/x-handlebars"&gt;
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Author&lt;/th&gt;&lt;/tr&gt;
+  {{#each post in posts }}
+    &lt;tr&gt;
+      &lt;th&gt;{{ post.title }}&lt;/th&gt;
+      &lt;th&gt;{{ post.author }}&lt;/th&gt;
+    &lt;/tr&gt;
+  {{/each }}
+&lt;/table&gt;
+&lt;/script&gt;
+</code></pre>
+          </section>
+          <section>
             <h3>... Rails is an amazing API server</h3>
           </section>
           <section>
@@ -134,6 +162,12 @@ realtime/ ?
           </section>
           <section>
             <h3>JRuby is an easy path to Rails</h3>
+          </section>
+          <section>
+            <h3>Internal applications</h3>
+          </section>
+          <section>
+            <h3>SOA means diverse backends</h3>
           </section>
         </section>
         <section>
